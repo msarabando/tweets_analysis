@@ -1,3 +1,4 @@
+from wordcloud import WordCloud
 list=[]
 list2=[]
 '''
@@ -33,4 +34,9 @@ bin_edges = [-1,-0.5, 0, 0.5, 1]
 plt.hist(list2, bins=bin_edges)
 plt.xlabel("subjectivity")
 plt.ylabel("tweets")
+plt.show()
+
+plt.scatter(list, list2, color=["red","blue"])
+plt.xlabel("subjectivity")
+plt.ylabel("polarity")
 plt.show()
